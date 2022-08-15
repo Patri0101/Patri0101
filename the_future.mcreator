@@ -1,0 +1,121 @@
+{
+  "mod_elements": [
+    {
+      "name": "Radioactivebiom",
+      "type": "biome",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radioactivebiom"
+    },
+    {
+      "name": "RobotThisEntityKillsAnotherOne",
+      "type": "procedure",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "robot_this_entity_kills_another_one",
+      "metadata": {
+        "dependencies": []
+      }
+    },
+    {
+      "name": "Robot",
+      "type": "livingentity",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "robot"
+    },
+    {
+      "name": "Hardware",
+      "type": "item",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hardware"
+    },
+    {
+      "name": "Redbull",
+      "type": "item",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "redbull"
+    },
+    {
+      "name": "NukeCokePlayerFinishesUsingItem",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nuke_coke_player_finishes_using_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "NukeCoke",
+      "type": "item",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nuke_coke"
+    },
+    {
+      "name": "RedbullPlayerFinishesUsingItem",
+      "type": "procedure",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "redbull_player_finishes_using_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "item.the_future.redbull": "Redbull",
+      "item.the_future.robot_spawn_egg": "Robot Spawn Egg",
+      "biome.the_future.radioactivebiom": "Radioactivebiom",
+      "item.the_future.nuke_coke": "Nuke Coke",
+      "entity.the_future.robot": "Robot",
+      "item.the_future.hardware": "Hardware"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "the_future",
+    "modName": "the future",
+    "version": "1.0.0",
+    "author": "Creator, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.18.2",
+    "modElementsPackage": "net.mcreator.thefuture",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202200120510
+}
