@@ -82,7 +82,7 @@ public class TheFutureModBiomes {
 							List<SurfaceRules.RuleSource> surfaceRules = new ArrayList<>(sequenceRuleSource.sequence());
 							surfaceRules.add(1,
 									preliminarySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, RADIOACTIVEBIOM.getId()),
-											Blocks.SOUL_SAND.defaultBlockState(), Blocks.SLIME_BLOCK.defaultBlockState(),
+											TheFutureModBlocks.RADIOACTIVE_BLOCK.get().defaultBlockState(), Blocks.SLIME_BLOCK.defaultBlockState(),
 											Blocks.CRYING_OBSIDIAN.defaultBlockState()));
 							NoiseGeneratorSettings moddedNoiseGeneratorSettings = new NoiseGeneratorSettings(noiseGeneratorSettings.noiseSettings(),
 									noiseGeneratorSettings.defaultBlock(), noiseGeneratorSettings.defaultFluid(),

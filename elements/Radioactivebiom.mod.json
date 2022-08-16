@@ -4,7 +4,7 @@
   "definition": {
     "name": "Radioactivebiom",
     "groundBlock": {
-      "value": "Blocks.SOUL_SAND"
+      "value": "CUSTOM:RadioactiveBlock"
     },
     "undergroundBlock": {
       "value": "Blocks.SLIME_BLOCK"
