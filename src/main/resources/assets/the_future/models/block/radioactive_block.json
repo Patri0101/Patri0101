@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_future:blocks/pisek",
+    "up": "the_future:blocks/pisek",
+    "north": "the_future:blocks/pisek",
+    "east": "the_future:blocks/pisek",
+    "south": "the_future:blocks/pisek",
+    "west": "the_future:blocks/pisek",
+    "particle": "the_future:blocks/pisek"
+  }
+}

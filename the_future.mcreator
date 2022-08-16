@@ -82,6 +82,14 @@
           }
         ]
       }
+    },
+    {
+      "name": "RadioactiveBlock",
+      "type": "block",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "radioactive_block"
     }
   ],
   "variable_elements": [],
@@ -92,6 +100,7 @@
       "item.the_future.robot_spawn_egg": "Robot Spawn Egg",
       "biome.the_future.radioactivebiom": "Radioactivebiom",
       "item.the_future.nuke_coke": "Nuke Coke",
+      "block.the_future.radioactive_block": "Radioactive Block",
       "entity.the_future.robot": "Robot",
       "item.the_future.hardware": "Hardware"
     }

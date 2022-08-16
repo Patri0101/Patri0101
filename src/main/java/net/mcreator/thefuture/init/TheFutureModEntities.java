@@ -24,9 +24,7 @@ public class TheFutureModEntities {
 	public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.ENTITIES, TheFutureMod.MODID);
 	public static final RegistryObject<EntityType<RobotEntity>> ROBOT = register("robot",
 			EntityType.Builder.<RobotEntity>of(RobotEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
-					.setUpdateInterval(3).setCustomClientFactory(RobotEntity::new)
-
-					.sized(0.6f, 1.8f));
+					.setUpdateInterval(3).setCustomClientFactory(RobotEntity::new).fireImmune().sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));

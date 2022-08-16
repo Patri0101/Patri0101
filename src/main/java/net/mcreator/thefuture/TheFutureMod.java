@@ -28,6 +28,7 @@ import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.thefuture.init.TheFutureModItems;
 import net.mcreator.thefuture.init.TheFutureModEntities;
+import net.mcreator.thefuture.init.TheFutureModBlocks;
 import net.mcreator.thefuture.init.TheFutureModBiomes;
 
 import java.util.function.Supplier;
@@ -46,7 +47,7 @@ public class TheFutureMod {
 	public TheFutureMod() {
 
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
-
+		TheFutureModBlocks.REGISTRY.register(bus);
 		TheFutureModItems.REGISTRY.register(bus);
 		TheFutureModEntities.REGISTRY.register(bus);
 

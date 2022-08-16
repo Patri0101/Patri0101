@@ -36,11 +36,16 @@ import net.minecraft.network.protocol.Packet;
 import net.mcreator.thefuture.procedures.RobotThisEntityKillsAnotherOneProcedure;
 import net.mcreator.thefuture.init.TheFutureModEntities;
 
+import java.util.Set;
+
 @Mod.EventBusSubscriber
 public class RobotEntity extends Monster {
+	private static final Set<ResourceLocation> SPAWN_BIOMES = Set.of(new ResourceLocation("the_future:radioactivebiom"));
+
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
-		event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(TheFutureModEntities.ROBOT.get(), 20, 4, 4));
+		if (SPAWN_BIOMES.contains(event.getName()))
+			event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(TheFutureModEntities.ROBOT.get(), 20, 4, 4));
 	}
 
 	public RobotEntity(PlayMessages.SpawnEntity packet, Level world) {
@@ -89,6 +94,15 @@ public class RobotEntity extends Monster {
 	}
 
 	@Override
+	public boolean hurt(DamageSource source, float amount) {
+		if (source == DamageSource.FALL)
+			return false;
+		if (source == DamageSource.CACTUS)
+			return false;
+		return super.hurt(source, amount);
+	}
+
+	@Override
 	public void awardKillScore(Entity entity, int score, DamageSource damageSource) {
 		super.awardKillScore(entity, score, damageSource);
 		RobotThisEntityKillsAnotherOneProcedure.execute(
@@ -108,7 +122,7 @@ public class RobotEntity extends Monster {
 		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.3);
 		builder = builder.add(Attributes.MAX_HEALTH, 10);
 		builder = builder.add(Attributes.ARMOR, 0);
-		builder = builder.add(Attributes.ATTACK_DAMAGE, 3);
+		builder = builder.add(Attributes.ATTACK_DAMAGE, 5);
 		return builder;
 	}
 }
