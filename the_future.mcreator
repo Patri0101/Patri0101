@@ -36,14 +36,6 @@
       "registry_name": "hardware"
     },
     {
-      "name": "Redbull",
-      "type": "item",
-      "sortid": 5,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "redbull"
-    },
-    {
       "name": "NukeCokePlayerFinishesUsingItem",
       "type": "procedure",
       "sortid": 6,
@@ -96,7 +88,6 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "item.the_future.redbull": "Redbull",
       "item.the_future.robot_spawn_egg": "Robot Spawn Egg",
       "biome.the_future.radioactivebiom": "Radioactivebiom",
       "item.the_future.nuke_coke": "Nuke Coke",
