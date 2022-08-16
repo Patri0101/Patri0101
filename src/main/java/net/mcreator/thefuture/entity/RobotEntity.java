@@ -34,6 +34,7 @@ import net.minecraft.world.Difficulty;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.Packet;
+import net.minecraft.core.particles.ParticleTypes;
 
 import net.mcreator.thefuture.procedures.RobotThisEntityKillsAnotherOneProcedure;
 import net.mcreator.thefuture.init.TheFutureModEntities;
@@ -115,6 +116,24 @@ public class RobotEntity extends Monster {
 		RobotThisEntityKillsAnotherOneProcedure.execute(
 
 		);
+	}
+
+	public void aiStep() {
+		super.aiStep();
+		double x = this.getX();
+		double y = this.getY();
+		double z = this.getZ();
+		Entity entity = this;
+		Level world = this.level;
+		for (int l = 0; l < 4; ++l) {
+			double x0 = x + random.nextFloat();
+			double y0 = y + random.nextFloat();
+			double z0 = z + random.nextFloat();
+			double dx = (random.nextFloat() - 0.5D) * 0.5D;
+			double dy = (random.nextFloat() - 0.5D) * 0.5D;
+			double dz = (random.nextFloat() - 0.5D) * 0.5D;
+			world.addParticle(ParticleTypes.ANGRY_VILLAGER, x0, y0, z0, dx, dy, dz);
+		}
 	}
 
 	public static void init() {
