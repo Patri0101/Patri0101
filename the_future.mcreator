@@ -82,22 +82,6 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "radioactive_block"
-    },
-    {
-      "name": "VestaBodyTickEvent",
-      "type": "procedure",
-      "sortid": 9,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "vesta_body_tick_event",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
     }
   ],
   "variable_elements": [],
