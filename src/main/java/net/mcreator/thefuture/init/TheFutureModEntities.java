@@ -17,6 +17,7 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
 import net.mcreator.thefuture.entity.RobotEntity;
+import net.mcreator.thefuture.entity.MuzEntity;
 import net.mcreator.thefuture.entity.HodnyrobotEntity;
 import net.mcreator.thefuture.TheFutureMod;
 
@@ -29,6 +30,11 @@ public class TheFutureModEntities {
 	public static final RegistryObject<EntityType<HodnyrobotEntity>> HODNYROBOT = register("hodnyrobot",
 			EntityType.Builder.<HodnyrobotEntity>of(HodnyrobotEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(HodnyrobotEntity::new).fireImmune().sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<MuzEntity>> MUZ = register("muz",
+			EntityType.Builder.<MuzEntity>of(MuzEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(3).setCustomClientFactory(MuzEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -39,6 +45,7 @@ public class TheFutureModEntities {
 		event.enqueueWork(() -> {
 			RobotEntity.init();
 			HodnyrobotEntity.init();
+			MuzEntity.init();
 		});
 	}
 
@@ -46,5 +53,6 @@ public class TheFutureModEntities {
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
 		event.put(ROBOT.get(), RobotEntity.createAttributes().build());
 		event.put(HODNYROBOT.get(), HodnyrobotEntity.createAttributes().build());
+		event.put(MUZ.get(), MuzEntity.createAttributes().build());
 	}
 }

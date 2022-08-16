@@ -27,6 +27,8 @@ public class TheFutureModItems {
 	public static final RegistryObject<Item> RADIOACTIVE_BLOCK = block(TheFutureModBlocks.RADIOACTIVE_BLOCK, CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final RegistryObject<Item> HODNYROBOT = REGISTRY.register("hodnyrobot_spawn_egg",
 			() -> new ForgeSpawnEggItem(TheFutureModEntities.HODNYROBOT, -1, -1, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> MUZ = REGISTRY.register("muz_spawn_egg",
+			() -> new ForgeSpawnEggItem(TheFutureModEntities.MUZ, -1, -1, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
