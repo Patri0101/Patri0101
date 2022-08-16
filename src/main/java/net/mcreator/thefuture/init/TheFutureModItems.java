@@ -14,6 +14,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.BlockItem;
 
+import net.mcreator.thefuture.item.PistolItem;
 import net.mcreator.thefuture.item.NukeCokeItem;
 import net.mcreator.thefuture.item.HardwareItem;
 import net.mcreator.thefuture.TheFutureMod;
@@ -25,6 +26,7 @@ public class TheFutureModItems {
 	public static final RegistryObject<Item> HARDWARE = REGISTRY.register("hardware", () -> new HardwareItem());
 	public static final RegistryObject<Item> NUKE_COKE = REGISTRY.register("nuke_coke", () -> new NukeCokeItem());
 	public static final RegistryObject<Item> RADIOACTIVE_BLOCK = block(TheFutureModBlocks.RADIOACTIVE_BLOCK, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> PISTOL = REGISTRY.register("pistol", () -> new PistolItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
