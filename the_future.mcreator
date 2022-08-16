@@ -82,14 +82,6 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "radioactive_block"
-    },
-    {
-      "name": "Pistol",
-      "type": "rangeditem",
-      "sortid": 9,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "pistol"
     }
   ],
   "variable_elements": [],
@@ -101,7 +93,6 @@
       "item.the_future.nuke_coke": "Nuke Coke",
       "block.the_future.radioactive_block": "Radioactive Block",
       "entity.the_future.robot": "Robot",
-      "item.the_future.pistol": "Pistol",
       "item.the_future.hardware": "Hardware"
     }
   },

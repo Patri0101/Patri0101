@@ -17,7 +17,6 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
 import net.mcreator.thefuture.entity.RobotEntity;
-import net.mcreator.thefuture.entity.PistolEntity;
 import net.mcreator.thefuture.TheFutureMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -26,9 +25,6 @@ public class TheFutureModEntities {
 	public static final RegistryObject<EntityType<RobotEntity>> ROBOT = register("robot",
 			EntityType.Builder.<RobotEntity>of(RobotEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
 					.setUpdateInterval(3).setCustomClientFactory(RobotEntity::new).fireImmune().sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<PistolEntity>> PISTOL = register("projectile_pistol",
-			EntityType.Builder.<PistolEntity>of(PistolEntity::new, MobCategory.MISC).setCustomClientFactory(PistolEntity::new)
-					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
