@@ -108,20 +108,20 @@
       "registry_name": "naboj"
     },
     {
-      "name": "ReceptNaNaboj",
-      "type": "recipe",
-      "sortid": 13,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "recept_na_naboj"
-    },
-    {
       "name": "Strela",
       "type": "item",
       "sortid": 14,
       "compiles": true,
       "locked_code": false,
       "registry_name": "strela"
+    },
+    {
+      "name": "AK47",
+      "type": "rangeditem",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ak_47"
     },
     {
       "name": "Pistol",
@@ -132,12 +132,20 @@
       "registry_name": "pistol"
     },
     {
-      "name": "AK47",
-      "type": "rangeditem",
-      "sortid": 16,
+      "name": "ReceptNaNaboj",
+      "type": "recipe",
+      "sortid": 13,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "ak_47"
+      "registry_name": "recept_na_naboj"
+    },
+    {
+      "name": "Tovarna",
+      "type": "structure",
+      "sortid": 9,
+      "compiles": false,
+      "locked_code": false,
+      "registry_name": "tovarna"
     }
   ],
   "variable_elements": [],

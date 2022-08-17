@@ -27,6 +27,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.thefuture.init.TheFutureModItems;
+import net.mcreator.thefuture.init.TheFutureModFeatures;
 import net.mcreator.thefuture.init.TheFutureModEntities;
 import net.mcreator.thefuture.init.TheFutureModBlocks;
 import net.mcreator.thefuture.init.TheFutureModBiomes;
@@ -50,6 +51,8 @@ public class TheFutureMod {
 		TheFutureModBlocks.REGISTRY.register(bus);
 		TheFutureModItems.REGISTRY.register(bus);
 		TheFutureModEntities.REGISTRY.register(bus);
+
+		TheFutureModFeatures.REGISTRY.register(bus);
 
 		TheFutureModBiomes.REGISTRY.register(bus);
 
