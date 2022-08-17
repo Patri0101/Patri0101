@@ -82,6 +82,14 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "radioactive_block"
+    },
+    {
+      "name": "Tovarna",
+      "type": "structure",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tovarna"
     }
   ],
   "variable_elements": [],
