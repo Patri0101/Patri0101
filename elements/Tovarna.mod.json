@@ -4,7 +4,7 @@
   "definition": {
     "structure": "tovarna",
     "randomlyRotateStructure": true,
-    "surfaceDetectionType": "First motion blocking block",
+    "surfaceDetectionType": "First block",
     "spawnProbability": 100000,
     "minCountPerChunk": 1,
     "maxCountPerChunk": 1,

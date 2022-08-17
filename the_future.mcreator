@@ -79,7 +79,7 @@
       "name": "Muz",
       "type": "livingentity",
       "sortid": 10,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "muz"
     },
@@ -87,7 +87,7 @@
       "name": "Holka",
       "type": "livingentity",
       "sortid": 11,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "holka"
     },
@@ -95,7 +95,7 @@
       "name": "Naboj",
       "type": "item",
       "sortid": 12,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "naboj"
     },
@@ -103,7 +103,7 @@
       "name": "Strela",
       "type": "item",
       "sortid": 14,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "strela"
     },
@@ -111,7 +111,7 @@
       "name": "AK47",
       "type": "rangeditem",
       "sortid": 16,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "ak_47"
     },
@@ -127,7 +127,7 @@
       "name": "Tovarna",
       "type": "structure",
       "sortid": 9,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "tovarna"
     }
