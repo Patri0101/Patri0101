@@ -9,8 +9,11 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.api.distmarker.Dist;
 
+import net.minecraft.client.renderer.entity.ThrownItemRenderer;
+
 import net.mcreator.thefuture.client.renderer.RobotRenderer;
 import net.mcreator.thefuture.client.renderer.MuzRenderer;
+import net.mcreator.thefuture.client.renderer.HolkaRenderer;
 import net.mcreator.thefuture.client.renderer.HodnyrobotRenderer;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
@@ -20,5 +23,8 @@ public class TheFutureModEntityRenderers {
 		event.registerEntityRenderer(TheFutureModEntities.ROBOT.get(), RobotRenderer::new);
 		event.registerEntityRenderer(TheFutureModEntities.HODNYROBOT.get(), HodnyrobotRenderer::new);
 		event.registerEntityRenderer(TheFutureModEntities.MUZ.get(), MuzRenderer::new);
+		event.registerEntityRenderer(TheFutureModEntities.HOLKA.get(), HolkaRenderer::new);
+		event.registerEntityRenderer(TheFutureModEntities.PISTOL.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(TheFutureModEntities.AK_47.get(), ThrownItemRenderer::new);
 	}
 }

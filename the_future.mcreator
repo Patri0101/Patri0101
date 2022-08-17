@@ -28,14 +28,6 @@
       "registry_name": "robot"
     },
     {
-      "name": "Hardware",
-      "type": "item",
-      "sortid": 4,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "hardware"
-    },
-    {
       "name": "NukeCokePlayerFinishesUsingItem",
       "type": "procedure",
       "sortid": 6,
@@ -98,6 +90,54 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "muz"
+    },
+    {
+      "name": "Holka",
+      "type": "livingentity",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "holka"
+    },
+    {
+      "name": "Naboj",
+      "type": "item",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "naboj"
+    },
+    {
+      "name": "ReceptNaNaboj",
+      "type": "recipe",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recept_na_naboj"
+    },
+    {
+      "name": "Strela",
+      "type": "item",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "strela"
+    },
+    {
+      "name": "Pistol",
+      "type": "rangeditem",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pistol"
+    },
+    {
+      "name": "AK47",
+      "type": "rangeditem",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ak_47"
     }
   ],
   "variable_elements": [],
@@ -105,15 +145,20 @@
   "language_map": {
     "en_us": {
       "entity.the_future.hodnyrobot": "Hodnyrobot",
+      "item.the_future.nuke_coke": "Nuke Coke",
+      "block.the_future.radioactive_block": "Radioactive Block",
+      "entity.the_future.robot": "Robot",
+      "entity.the_future.muz": "Muz",
+      "entity.the_future.holka": "Holka",
+      "item.the_future.naboj": "Naboj",
+      "item.the_future.strela": "Strela",
+      "item.the_future.holka_spawn_egg": "Holka Spawn Egg",
       "item.the_future.muz_spawn_egg": "Muz Spawn Egg",
       "item.the_future.robot_spawn_egg": "Robot Spawn Egg",
       "biome.the_future.radioactivebiom": "Radioactivebiom",
-      "item.the_future.nuke_coke": "Nuke Coke",
-      "block.the_future.radioactive_block": "Radioactive Block",
       "item.the_future.hodnyrobot_spawn_egg": "Hodnyrobot Spawn Egg",
-      "entity.the_future.robot": "Robot",
-      "item.the_future.hardware": "Hardware",
-      "entity.the_future.muz": "Muz"
+      "item.the_future.pistol": "Pistol",
+      "item.the_future.ak_47": "AK 4 7"
     }
   },
   "foldersRoot": {

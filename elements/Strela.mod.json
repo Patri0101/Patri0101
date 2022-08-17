@@ -3,9 +3,9 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "hard",
+    "texture": "sagzfdffdfaudsdsaduaduada",
     "customModelName": "Normal",
-    "name": "Hardware",
+    "name": "Strela",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "MISC"
@@ -24,9 +24,7 @@
     "damageOnCrafting": false,
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
-    "specialInfo": [
-      "hardware"
-    ],
+    "specialInfo": [],
     "hasGlow": false,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
