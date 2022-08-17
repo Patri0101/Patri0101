@@ -1,6 +1,6 @@
 {
-  "block.the_future.radioactive_block": "Radioactive Block",
   "item.the_future.nuke_coke": "Nuke Coke",
+  "block.the_future.radioactive_block": "Radioactive Block",
   "entity.the_future.robot": "Robot",
   "entity.the_future.muz": "Muz",
   "entity.the_future.holka": "Holka",
@@ -10,6 +10,5 @@
   "item.the_future.muz_spawn_egg": "Muz Spawn Egg",
   "item.the_future.robot_spawn_egg": "Robot Spawn Egg",
   "biome.the_future.radioactivebiom": "Radioactivebiom",
-  "item.the_future.pistol": "Pistol",
   "item.the_future.ak_47": "AK 4 7"
 }

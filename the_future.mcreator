@@ -103,7 +103,7 @@
       "name": "Strela",
       "type": "item",
       "sortid": 14,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "strela"
     },
@@ -114,14 +114,6 @@
       "compiles": false,
       "locked_code": false,
       "registry_name": "ak_47"
-    },
-    {
-      "name": "Pistol",
-      "type": "rangeditem",
-      "sortid": 15,
-      "compiles": false,
-      "locked_code": false,
-      "registry_name": "pistol"
     },
     {
       "name": "ReceptNaNaboj",
@@ -135,7 +127,7 @@
       "name": "Tovarna",
       "type": "structure",
       "sortid": 9,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "tovarna"
     }
@@ -144,8 +136,8 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "block.the_future.radioactive_block": "Radioactive Block",
       "item.the_future.nuke_coke": "Nuke Coke",
+      "block.the_future.radioactive_block": "Radioactive Block",
       "entity.the_future.robot": "Robot",
       "entity.the_future.muz": "Muz",
       "entity.the_future.holka": "Holka",
@@ -155,7 +147,6 @@
       "item.the_future.muz_spawn_egg": "Muz Spawn Egg",
       "item.the_future.robot_spawn_egg": "Robot Spawn Egg",
       "biome.the_future.radioactivebiom": "Radioactivebiom",
-      "item.the_future.pistol": "Pistol",
       "item.the_future.ak_47": "AK 4 7"
     }
   },

@@ -22,7 +22,6 @@ public class TheFutureModEntityRenderers {
 		event.registerEntityRenderer(TheFutureModEntities.ROBOT.get(), RobotRenderer::new);
 		event.registerEntityRenderer(TheFutureModEntities.MUZ.get(), MuzRenderer::new);
 		event.registerEntityRenderer(TheFutureModEntities.HOLKA.get(), HolkaRenderer::new);
-		event.registerEntityRenderer(TheFutureModEntities.PISTOL.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(TheFutureModEntities.AK_47.get(), ThrownItemRenderer::new);
 	}
 }
