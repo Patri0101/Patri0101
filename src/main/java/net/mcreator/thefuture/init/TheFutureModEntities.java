@@ -20,7 +20,6 @@ import net.mcreator.thefuture.entity.RobotEntity;
 import net.mcreator.thefuture.entity.PistolEntity;
 import net.mcreator.thefuture.entity.MuzEntity;
 import net.mcreator.thefuture.entity.HolkaEntity;
-import net.mcreator.thefuture.entity.HodnyrobotEntity;
 import net.mcreator.thefuture.entity.AK47Entity;
 import net.mcreator.thefuture.TheFutureMod;
 
@@ -30,9 +29,6 @@ public class TheFutureModEntities {
 	public static final RegistryObject<EntityType<RobotEntity>> ROBOT = register("robot",
 			EntityType.Builder.<RobotEntity>of(RobotEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
 					.setUpdateInterval(3).setCustomClientFactory(RobotEntity::new).fireImmune().sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<HodnyrobotEntity>> HODNYROBOT = register("hodnyrobot",
-			EntityType.Builder.<HodnyrobotEntity>of(HodnyrobotEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
-					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(HodnyrobotEntity::new).fireImmune().sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<MuzEntity>> MUZ = register("muz",
 			EntityType.Builder.<MuzEntity>of(MuzEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
 					.setUpdateInterval(3).setCustomClientFactory(MuzEntity::new)
@@ -58,7 +54,6 @@ public class TheFutureModEntities {
 	public static void init(FMLCommonSetupEvent event) {
 		event.enqueueWork(() -> {
 			RobotEntity.init();
-			HodnyrobotEntity.init();
 			MuzEntity.init();
 			HolkaEntity.init();
 		});
@@ -67,7 +62,6 @@ public class TheFutureModEntities {
 	@SubscribeEvent
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
 		event.put(ROBOT.get(), RobotEntity.createAttributes().build());
-		event.put(HODNYROBOT.get(), HodnyrobotEntity.createAttributes().build());
 		event.put(MUZ.get(), MuzEntity.createAttributes().build());
 		event.put(HOLKA.get(), HolkaEntity.createAttributes().build());
 	}

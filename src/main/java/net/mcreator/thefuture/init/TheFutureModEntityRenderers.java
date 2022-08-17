@@ -14,14 +14,12 @@ import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 import net.mcreator.thefuture.client.renderer.RobotRenderer;
 import net.mcreator.thefuture.client.renderer.MuzRenderer;
 import net.mcreator.thefuture.client.renderer.HolkaRenderer;
-import net.mcreator.thefuture.client.renderer.HodnyrobotRenderer;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class TheFutureModEntityRenderers {
 	@SubscribeEvent
 	public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
 		event.registerEntityRenderer(TheFutureModEntities.ROBOT.get(), RobotRenderer::new);
-		event.registerEntityRenderer(TheFutureModEntities.HODNYROBOT.get(), HodnyrobotRenderer::new);
 		event.registerEntityRenderer(TheFutureModEntities.MUZ.get(), MuzRenderer::new);
 		event.registerEntityRenderer(TheFutureModEntities.HOLKA.get(), HolkaRenderer::new);
 		event.registerEntityRenderer(TheFutureModEntities.PISTOL.get(), ThrownItemRenderer::new);
