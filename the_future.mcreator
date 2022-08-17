@@ -87,7 +87,7 @@
       "name": "Tovarna",
       "type": "structure",
       "sortid": 9,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "tovarna"
     },
@@ -95,7 +95,7 @@
       "name": "Muz",
       "type": "livingentity",
       "sortid": 10,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "muz"
     },
@@ -103,7 +103,7 @@
       "name": "Hodnyrobot",
       "type": "livingentity",
       "sortid": 9,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "hodnyrobot"
     }
