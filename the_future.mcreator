@@ -90,6 +90,22 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "tovarna"
+    },
+    {
+      "name": "Muz",
+      "type": "livingentity",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "muz"
+    },
+    {
+      "name": "Hodnyrobot",
+      "type": "livingentity",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hodnyrobot"
     }
   ],
   "variable_elements": [],
