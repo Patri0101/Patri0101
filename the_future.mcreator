@@ -79,7 +79,7 @@
       "name": "Hodnyrobot",
       "type": "livingentity",
       "sortid": 9,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "hodnyrobot"
     },
@@ -87,7 +87,7 @@
       "name": "Muz",
       "type": "livingentity",
       "sortid": 10,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "muz"
     },
@@ -95,7 +95,7 @@
       "name": "Holka",
       "type": "livingentity",
       "sortid": 11,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "holka"
     },
@@ -119,7 +119,7 @@
       "name": "AK47",
       "type": "rangeditem",
       "sortid": 16,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "ak_47"
     },
@@ -127,7 +127,7 @@
       "name": "Pistol",
       "type": "rangeditem",
       "sortid": 15,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "pistol"
     },
@@ -143,7 +143,7 @@
       "name": "Tovarna",
       "type": "structure",
       "sortid": 9,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "tovarna"
     }
